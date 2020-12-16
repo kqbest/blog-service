@@ -20,9 +20,6 @@ class HomeController extends Controller {
                 'FROM article LEFT JOIN type ON article.type_id = type.id ' +
                 'ORDER BY id ASC';
     const result = await this.app.mysql.query(sql);
-
-    console.log(1111, result);
-
     this.ctx.body = {
       code: 200,
       data: result,

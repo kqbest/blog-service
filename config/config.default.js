@@ -49,7 +49,7 @@ module.exports = appInfo => {
   };
 
   config.cors = {
-    origin: 'http://localhost:3000', // 匹配规则  域名+端口  *则为全匹配
+    // origin: '*', // 匹配规则  域名+端口  *则为全匹配
     credentials: true, // 开启认证
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
   };
